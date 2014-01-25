@@ -1,0 +1,59 @@
+<div ng-controller="ProductCtrl">
+    <div class="col-md-3">
+        <div class="well">
+            <ul class="nav nav-list">
+            
+                <li ng-class="{active: $routeSegment.name == 'h0'}"><a href="#/">Home</a></li>
+                
+                <li class="nav-header">Products</li>
+                
+                <li ng-repeat="i in items" 
+                    ng-class="{active: $routeSegment.startsWith('h01.itemInfo') && $routeSegment.$routeParams.id == i}">
+                    
+                    <a ng-href="#/product/{{i}}">{{i}}</a>         
+                </li>
+  
+
+                <li ng-class="{active: $routeSegment.startsWith('h01.prefs')}">
+                    <a href="#/product/prefs">Preferences</a>
+                </li>
+ <!--               
+                <li class="nav-header">Error handling</li>
+                
+                <li ng-class="{active: $routeSegment.startsWith('h1.invalidTemplate')}">
+                    <a href="#/invalid-template">Invalid template file</a>
+                </li>
+
+                <li ng-class="{active: $routeSegment.startsWith('h1.invalidData')}">
+                    <a href="#/invalid-data">Invalid resolve data</a>
+                </li>
+
+                <li class="nav-header">Slow data resolving</li>
+
+                <li ng-class="{active: $routeSegment.startsWith('h1.slowDataSimple')}">
+                    <a href="#/slow-data">Without `untilResolved`</a>
+                </li>
+
+                <li ng-class="{active: $routeSegment.startsWith('h1.slowDataLoading')}">
+                    <a href="#/slow-data-loading">With `untilResolved`</a>
+                </li>
+
+                <li ng-class="{active: $routeSegment.startsWith('h1.inlineView')}">
+                    <a href="#/inline-view">Inline view</a>
+                </li>
+                
+                <li class="divider"></li>
+                
+                <li>
+                    <button class="btn" ng-class="{active: test.btnClicked}" ng-click="test.btnClicked = !test.btnClicked">Click me!</button>
+                    <span class="label" ng-show="test.btnClicked">Clicked</span>
+                </li>
+---->                
+            </ul>
+        </div>       
+    </div>
+    
+	<div class="col-md-9" app-view-segment="1"></div>
+
+    <!-- <div class="span9 anim" app-view-segment="1"></div> -->
+<!--  </div> -->

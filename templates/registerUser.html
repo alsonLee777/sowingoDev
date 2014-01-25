@@ -1,0 +1,241 @@
+<div style="margin-left:-50px" ng-controller="RegisterUserCtrl">
+    <div class="row">
+        <div class="col-md-2">
+            &nbsp;
+        </div>
+         <div class="col-md-10">
+            <div class="page-header-orangeBrownText">User Registration</div>
+        </div>   
+        <div style="clear:both;"></div>
+        <hr />        
+    </div>
+    <div class="row">
+        <div class="col-md-2" style="margin-top:6px; font-size:15px;">
+            <span >Signing up for Sowingo is a </span><span class="sideBar-greenText ">simple</span><span> and </span><span class="sideBar-greenText ">FREE</span><span> process. Just submit the following information and you will have immediate access to our ever-growing online catalogue.  as well as members-only privelages such as inventory Management, Reporting & Analytics, and multiple User Accounts.</span>
+        </div>
+        <div class="col-md-10">
+            <div class="register">
+              <form name="form" valid-submit="sendForm()" novalidate>    
+                  
+                    <!-- Account Type -->        
+                    <div style="clear:both;"></div>
+                    <div ng-class="{
+                            'has-error': form.$submitted && form.selectedAccountType.$invalid,
+                            'has-success': form.$submitted && form.selectedAccountType.$valid}">
+                        <div class="register-text">Select the Appropriate Account Type<span class="required-indicator">*</span></div>
+                        <div class="col-sm-4">
+                            <select id="selectedAccountType" name="selectedAccountType"  class="form-control input-sm" style="width:470px;" data-ng-model="person.selectedAccountType"
+                                    data-ng-options="i.item  for i in person.accountType" required >                
+                            </select>
+                            <div class="alert alert-danger sm" style="width:470px; height:10px; font-size:13px;" ng-show="form.$submitted && form.selectedAccountType.$error.required">Account Type is required</div>
+                        </div>
+                    </div>                   
+
+                    
+                    <div style="clear:both;"></div>
+                    <div class="fields-ver-spc">
+                        <!-- first name -->
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.firstName.$invalid,
+                                'has-success': form.$submitted && form.firstName.$valid}">
+                            <div class="register-text">First Name<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2" >
+                                <input id="firstName" name="firstName"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.firstName" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.firstName.$error.required">First Name is required</div>
+                            </div>
+                        </div>              
+         
+                        <!-- last name --> 
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.lastName.$invalid,
+                                'has-success': form.$submitted && form.lastName.$valid}">
+                            <div class="register-text">Last Name<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2">
+                                <input id="lastName" name="lastName"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.lastName" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.lastName.$error.required">Last Name is required</div>
+                            </div>
+                        </div>  
+                    </div><!-- end horizontal Grp -->
+            
+                    <!-- occupation -->
+                    <div style="clear:both;"></div>
+                    <div class="fields-ver-spc">
+                        <div class="register-text">Occupation</div>
+                        <div class="col-sm-6">
+                            <input id="occupation" name="occupation"  class="form-control input-sm" style="width:470px" type="text" ng-model="person.occupation" ></input>
+                        </div>
+                    </div>
+        
+                    <div style="clear:both;"></div>
+                    <div class="fields-ver-spc">
+                        <!-- Address -->
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.address.$invalid,
+                                'has-success': form.$submitted && form.address.$valid}">
+                            <div class="register-text">Address<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2" >
+                                <input id="address" name="address"  class="form-control input-sm" style="width:470px;" type="text" ng-model="person.address" required></input>
+                                <div class="alert alert-danger sm" style="width:470px; height:10px; font-size:13px;" ng-show="form.$submitted && form.address.$error.required">Address is required</div>
+                            </div>
+                        </div>              
+         
+                        <!-- Unit/Suite --> 
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.unitSuite.$invalid,
+                                'has-success': form.$submitted && form.unitSuite.$valid}">
+                            <div class="register-text">Unit/Suite<span class="required-indicator"></span></div>
+                            <div class="col-sm-2">
+                                <input id="unitSuite" name="unitSuite"  class="form-control input-sm" style="width:100px;" type="text" ng-model="person.unitSuite" ></input>
+                                <div class="alert alert-danger sm" style="width:100px; height:10px; font-size:13px;" ng-show="form.$submitted && form.unitSuite.$error.required">Unit/Suite # is required</div>
+                            </div>
+                        </div>  
+                    </div><!-- end horizontal Grp -->
+
+                    <div style="clear:both;"></div>
+                        <div class="fields-ver-spc">
+                        
+                            <!-- city -->
+                            <div style="float: left;" ng-class="{
+                                    'has-error': form.$submitted && form.city.$invalid,
+                                    'has-success': form.$submitted && form.city.$valid}">
+                                <div class="register-text">City<span class="required-indicator">*</span></div>
+                                <div class="col-sm-2">
+                                    <input id="city" name="city"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.city" required></input>
+                                    <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.city.$error.required">City is required</div>
+                                </div>
+                            </div>  
+            
+                            <!-- province -->
+                            <div style="float: left;" ng-class="{
+                                    'has-error': form.$submitted && form.selectedProvince.$invalid,
+                                    'has-success': form.$submitted && form.selectedProvince.$valid}">
+                                <div class="register-text">Province<span class="required-indicator">*</span></div>
+                                <div class="col-sm-2">
+                                    <select id="selectedProvince" name="selectedProvince"  class="form-control input-sm" style="width:220px" data-ng-model="person.selectedProvince"
+                                            data-ng-options="i.item  for i in person.province" required >                
+                                    </select>
+                                    <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.selectedProvince.$error.required">Province is required</div>
+                                </div>
+                            </div>     
+          
+                            <!-- postalCode -->
+                            <div style="float: left;" ng-class="{
+                                    'has-error': form.$submitted && form.postalCode.$invalid,
+                                    'has-success': form.$submitted && form.postalCode.$valid}">
+                                <div class="register-text">Postal Code<span class="required-indicator">*</span></div>
+                                <div class="col-sm-2">
+                                    <input id="postalCode" name="postalCode"  class="form-control input-sm" style="width:160px;" type="text" ng-model="person.postalCode" required></input>
+                                    <div class="alert alert-danger sm" style="width:160px; height:10px; font-size:13px;" ng-show="form.$submitted && form.postalCode.$error.required">Postal Code is required</div>
+                                </div>
+                            </div>  
+                        </div> <!-- end horizontal Grp -->
+    
+
+                        <div style="clear:both;"></div>
+                        <div class="fields-ver-spc">
+                            <!-- telephone -->
+                            <div style="float: left;" ng-class="{
+                                    'has-error': form.$submitted && form.telephone.$invalid,
+                                    'has-success': form.$submitted && form.telephone.$valid}">
+                                <div class="register-text">Telephone<span class="required-indicator">*</span></div>
+                                <div class="col-sm-2" >
+                                    <input id="telephone" name="telephone"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.telephone" required></input>
+                                    <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.telephone.$error.required">Telephone is required</div>
+                                </div>
+                            </div>              
+             
+                            <!-- email --> 
+                            <div style="float: left;" ng-class="{
+                                    'has-error': form.$submitted && form.email.$invalid,
+                                    'has-success': form.$submitted && form.email.$valid}">
+                                <div class="register-text">email<span class="required-indicator">*</span></div>
+                                <div class="col-sm-2">
+                                    <input id="email" name="email"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.email" required></input>
+                                    <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.email.$error.required">email is required</div>
+                                </div>
+                            </div>  
+                        </div><!-- end horizontal Grp -->
+
+                     <div style="clear:both;"></div>
+                     <div class="fields-ver-spc">
+                        <!-- username -->
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.username.$invalid,
+                                'has-success': form.$submitted && form.username.$valid}">
+                            <div class="register-text">Username<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2" >
+                                <input id="username" name="username"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.username" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.username.$error.required">Username is required</div>
+                            </div>
+                        </div>              
+         
+                        <!-- password --> 
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.password.$invalid,
+                                'has-success': form.$submitted && form.password.$valid}">
+                            <div class="register-text">Password<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2">
+                                <input id="password" name="password"  class="form-control input-sm" style="width:220px;" type="password" ng-model="person.password" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.password.$error.required">Password is required</div>
+                            </div>
+                        </div>  
+
+                        <!-- confirmPassword --> 
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.confirmPassword.$invalid,
+                                'has-success': form.$submitted && form.confirmPassword.$valid}">
+                            <div class="register-text">Confirm Password<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2">
+                                <input id="confirmPassword" name="confirmPassword"  class="form-control input-sm" style="width:220px;" type="password" ng-model="person.confirmPassword" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.confirmPassword.$error.required">Confirm Password is required</div>
+                            </div>
+                        </div> 
+                    </div><!-- end horizontal Grp -->
+
+
+                    <div style="clear:both;"></div>
+                    <div class="fields-ver-spc">    
+                        <!-- security questions public user -->
+                        <div style="float: left;"  ng-class="{
+                                'has-error': form.$submitted && form.selectedSecurityQuestionsPublicUser.$invalid,
+                                'has-success': form.$submitted && form.selectedSecurityQuestionsPublicUser.$valid}">
+                            <div class="register-text">Security Questions <span class="required-indicator">*</span></div>
+                            <div class="col-sm-2">
+                                <select id="selectedSecurityQuestionsPublicUser" name="selectedSecurityQuestionsPublicUser"  class="form-control input-sm" style="width:470px;" data-ng-model="person.selectedSecurityQuestionsPublicUser"
+                                        data-ng-options="i.item  for i in person.securityQuestionsPublicUser" required >                
+                                </select>
+                                <div class="alert alert-danger sm" style="width:470px; height:10px; font-size:13px;" ng-show="form.$submitted && form.selectedSecurityQuestionsPublicUser.$error.required">Select a Security Question is required</div>
+                            </div>
+                        </div>  
+        
+                        <!-- securityAnswer -->
+                        <div style="float: left;" ng-class="{
+                                'has-error': form.$submitted && form.securityAnswer.$invalid,
+                                'has-success': form.$submitted && form.securityAnswer.$valid}">
+                            <div class="register-text">Security Answer<span class="required-indicator">*</span></div>
+                            <div class="col-sm-2">
+                                <input id="securityAnswer" name="securityAnswer"  class="form-control input-sm" style="width:220px;" type="text" ng-model="person.securityAnswer" required></input>
+                                <div class="alert alert-danger sm" style="width:220px; height:10px; font-size:13px;" ng-show="form.$submitted && form.securityAnswer.$error.required">Security Answer is required</div>
+                            </div>
+                        </div>  
+                    </div><!-- end horizontal Grp -->
+    
+                    <div style="clear:both;"></div>
+                    <div class="fields-ver-spc">
+                        <!-- form controls-->
+                        <div class="form-group" style="margin-left: -55px;">
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn-register" ng-disabled="(form.$submitted && form.$invalid)">Register</button>
+                                &nbsp;&nbsp;&nbsp;
+                            </div>             
+                        </div>              
+                    </div>
+               </form>          
+               <span class="btn-reset-form" ng-click="reset()" >Clear form and start over</span>
+
+               <div style="clear:both;"></div>
+    
+            </div><!--Registration -->
+    </div><!--col-9 -->
+</div><!--row -->
+</div><!--ng-controller -->

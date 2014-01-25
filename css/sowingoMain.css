@@ -1,0 +1,391 @@
+   body {
+	   font-family: "Source Sans Pro", sans-serif;
+   }
+
+   div.dots {
+	   padding-top: 70px;
+	   padding-bottom: 70px;
+	   background-color: #4D4D4D;
+	   color: white;
+   }
+
+   .sideBar-greenText {
+        color: #A0C053;   
+   }
+
+   .page-header-orangeBrownText {
+        padding-top: 35px;
+        color: #D5832F;   
+        font-size:34px;
+        font-weight:800;
+   }
+
+   .register-top-border {
+	   border-top: 2px 
+       solid #DEDEDE;
+   }
+
+   .register {
+	   padding-top: 6px;
+	   height: 580px;
+	   background-color: white;
+	   font-size: 24pt;
+	   font-weight: 300;
+   }
+
+   .register-text {
+       padding-left: 20px;
+   	   background-color: white;
+	   font-size: 15pt;
+	   font-weight: 300;
+   }
+  
+   .required-indicator {
+       color:#FF7E00; 
+	   font-size: 13pt;    
+       font-weight: 600;
+    }
+
+   .btn-register {
+	   background-color: #79BB01;
+	   color: white;
+	   font-size: 14pt;
+	   margin-left: 3em;
+	   padding-left: 50px;
+	   padding-right: 50px;
+	   font-weight: 600;
+   }
+
+  .btn-reset-form {
+	   color: #63B7CF;
+	   font-size: 16pt;
+	   margin-left: 3em;
+	   padding-left: 50px;       
+   }
+
+   .fields-ver-spc  {
+       margin-top:6px;
+   }
+
+   .dots-section {
+	   display: inline-block;
+	   margin-right: 1em;
+	   margin-left: 1em;
+	   width: 150px;
+   }
+
+   .dots-divider {
+	   display: inline-block;
+	   width: 120px;
+   }
+
+   .dots-divider > i {
+	   padding-right: 1.50em;
+   }
+
+   .dots-divider > i:last-child {
+	   padding-right: 0;
+   }
+
+   .dots .text-block {
+	   width: 800px !important;
+   }
+
+   .dots .text-block p {
+	   text-align: center !important;
+	   font-size: 13pt !important;
+   }
+
+   .find-products-section {
+	   /* background-color: #00B7F0; TODO Fix the image to use this color, rather than change the background to the image */
+	   background-color: #1FB8EC;
+	   color: #FFF;
+   }
+
+   .find-products-section img {
+	   display: inline-block;
+	   margin-right: 10em;
+	   height: 275px !important;
+   }
+
+   .section {
+	   text-align: center;
+	   padding: 0;
+	   height: 350px;
+   }
+
+   .section:before {
+	   content: '';
+	   display: inline-block;
+	   height: 100%;
+	   vertical-align: middle;
+	   margin-right: -0.25em;
+   }
+
+   .section img {
+	   height: 350px;
+   }
+
+   .section .text-block {
+	   display: inline-block;
+	   vertical-align: middle;
+	   width: 500px;
+   }
+
+   .section .text-block h1 {
+	   margin-bottom: .5em;
+   }
+
+   .section .text-block p {
+	   text-align: left;
+	   font-size: 14pt;
+   }
+
+   .text-block h1 {
+	   font-weight: 600;
+	   font-family: "Source Sans Pro", sans-serif !important;
+   }
+
+   .text-block p {
+	   font-weight: 300;
+	   font-family: "Source Sans Pro", sans-serif !important;
+   }
+
+   /*
+	* TODO Look into making section images into background images
+	*      using something like this. Note: Currently, removing the
+	*      image ruins the alignment of the text section.
+   .supply-chain-section {
+	   background-image: url("./images/iStock_000019355157Small.jpg");
+	   background-repeat: no-repeat;
+	   background-position: right top;
+	   background-size: auto 350px;
+   }
+   */
+
+   .savings-section {
+	   /* background-color: #FF7D01; TODO Fix the image to use this color, rather than change the background to the image */
+	   background-color: #FD7E24;
+	   color: #FFFFFF;
+   }
+
+   .savings-section img {
+	   display: inline-block;
+	   margin-right: 10em;
+	   height: 275px;
+   }
+
+   .stay-organized-section {
+	   /* background-color: #98D201; */
+	   background-color: #99D028;
+	   color: #FFFFFF;
+   }
+
+   .stay-organized-section img {
+	   display: inline-block;
+	   margin-right: 10em;
+	   height: 275px;
+   }
+
+   .header-row img {
+	   height: 70px;
+   }
+
+   .header-row {
+	   z-index: 100;
+	   position: relative;
+	   margin-top: -0.5em;
+	   padding-bottom: 1em;
+	   box-shadow: 0px 3px 3px #888;
+	   -webkit-box-shadow: 0px 3px 3px #888;
+	   -moz-box-shadow: 0px 3px 3px #888;
+   }
+
+   .header-row .nav {
+	   margin-top: 1em;
+   }
+
+   .header-row div.input-group {
+	   margin-top: 1.5em;
+   }
+
+   .header-row button {
+	   color: #ABACAE !important;
+   }
+
+   .header-row .nav a {
+	   font-family: "Source Sans Pro", sans-serif !important;
+	   font-size: 16pt;
+	   color: #ABACAE;
+   }
+
+   .header-row .nav {
+	   color: #ABACAE;
+   }
+
+   .auth-bar {
+	   color: #ABACAE;
+   }
+
+   .auth-bar a {
+	   color: #00B7EF !important;
+   }
+
+   .main-section {
+	   z-index: -1;
+	   position: relative;
+	   height: 500px;
+	   background-image: url("./images/header-image.jpg");
+	   background-repeat: no-repeat;
+   }
+
+   .btn-sowingo {
+	   background-color: #79BB01;
+	   color: white;
+   }
+
+   .main-section .input-group {
+	   width: 450px;
+	   font-size: 36pt !important;
+   }
+
+   .main-section .text-block {
+	   margin-left: 400px;
+   }
+
+   .main-section h1 {
+	   text-align: left;
+	   font-size: 36pt !important;
+   }
+
+   .main-section p {
+	   text-align: left;
+	   font-size: 18pt !important;
+   }
+
+   #bottom-nav {
+	   width: 95%;
+	   margin-top:   15px;
+	   margin-right: auto;
+	   margin-left: auto;
+	   text-align: justify;
+	   -ms-text-justify: distribute-all-lines;
+	   text-justify: distribute-all-lines;
+	   min-width: 790px; /* actually could be 786px, but something even seems better */
+   }
+
+   .bottom-nav-section {
+	   display:        inline-block;
+	   vertical-align: top;
+	   height:         125px;
+   }
+
+   .stretch {
+	   width: 100%;
+	   display: inline-block;
+	   font-size: 0; /* IE6 fix */
+	   line-height: 0; /* IE6 fix */
+   }
+
+   .bottom-nav-section ul {
+	   padding:         0px;
+	   margin:          0px;
+	   list-style-type: none;
+	   font-size:       11pt;
+	   color:           #AAA;
+   }
+
+   .bottom-nav-section li {
+	   display:       inline-block;
+	   padding:       0px;
+	   padding-left:  8px;
+	   padding-right: 4px;
+	   border-left:   2px solid #BBBBBB;
+   }
+
+   .bottom-nav-section ul > li:first-child {
+	   border-left:  0px;
+	   padding-left: 0px;
+   }
+
+   .bottom-nav-section ul > li:last-child {
+	   padding-right: 0px;
+   }
+
+   .bottom-nav-section h1 {
+	   font-size:     12pt;
+	   margin-bottom: 5px;
+	   margin-top:    0px;
+   }
+
+   #bottom-nav #copyright-notice {
+	   font-size: 0.7em;
+   }
+
+   #botton-nav i {
+	   font-size: 11pt;
+   }
+
+   /* Let's give those drab icons some color! */
+   #bottom-nav .fa-facebook-square     { color: #34A8E3; }
+   #bottom-nav .fa-twitter-square      { color: #00C9F8; }
+   #bottom-nav .fa-google-plus-square  { color: #F26039; }
+   #bottom-nav .fa-linkedin-square     { color: #2893CB; }
+
+   #bottom-nav a:visited , #bottom-nav a:link, #bottom-nav a:hover, #bottom-nav a:active {
+	   text-decoration: none;
+	   color:           #AAA;
+   }
+
+   hr {
+	   border: 0;
+	   height: 1px;
+	   width: 80%;
+	   position:relative;
+	   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	   background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	   background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	   background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	   background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+	   background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+	   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+   }
+
+//Route Segment Section
+
+
+.navbar .label {
+    position: relative;
+    top: 11px;
+}
+
+.top-row {
+	text-align: center;
+	margin: 10px 0;
+}
+
+.top-row a div {
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.anim.ng-enter {
+	transition: opacity 1s;
+	opacity: 0.0;
+}
+
+.anim.ng-enter-active {
+	opacity: 1.0;
+}
+.anim.ng-leave {
+    display: none;
+}
+
+#loading {
+    position: absolute;
+    width: 300px;
+    top: 10px;
+    left: 500px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 1040;
+}

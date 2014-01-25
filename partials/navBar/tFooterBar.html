@@ -1,0 +1,40 @@
+       <nav id="bottom-nav" >
+           <div class="bottom-nav-section">
+               <span class="copyright-notice">&copy; 2014 SOWINGO.COM</span>
+           </div>
+           <div class="bottom-nav-section">
+               <h1>COMPANY</h1>
+					<ul ng-controller="MainCtrl">
+					    <li ng-class="{active: $routeSegment.startsWith('fAbout')}"><a href="#/about">About</a></li>
+					    <li ng-class="{active: $routeSegment.startsWith('fVendors')}"><a href="#/vendors">Vendors</a></li>
+					    <li ng-class="{active: $routeSegment.startsWith('fTerms')}"><a href="#/terms">Terms</a></li>
+					</ul>			   
+           </div>
+           <div class="bottom-nav-section">
+               <h1 style="margin-left:0em;">RESOURCES</h1>
+					<ul ng-controller="MainCtrl">		    
+						<li ng-class="{active: $routeSegment.startsWith('fPrivacy')}"><a href="#/privacy">Privacy</a></li>
+						<li ng-class="{active: $routeSegment.startsWith('h4')}"><a href="#/support">Support</a></li>
+						<li ng-class="{active: $routeSegment.startsWith('fFAQ')}"><a href="#/faq">FAQ</a></li>
+						<li ng-class="{active: $routeSegment.startsWith('fContact')}"><a href="#/contact">Contact</a></li>
+					</ul>
+           </div>
+           <div class="bottom-nav-section">
+               <h1 style="margin-left:0em;">CONNECT</h1>
+               <ul>
+                   <li>
+                       <a target="_blank" href="https://www.facebook.com/Sowingo"><i class="fa fa-facebook-square"></i> Facebook</a>
+                   </li>
+                   <li>
+                       <a target="_blank" href="http://ca.linkedin.com/company/sowingo?trk=ppro_cprof"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                   </li>
+                   <li>
+                       <a target="_blank" href="https://twitter.com/sowingodotcom"><i class="fa fa-twitter-square"></i> Twitter</a>
+                   </li>
+                   <li>
+                       <a target="_blank" href="https://plus.google.com/102238231165835755195/posts"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+                   </li>
+               </ul>
+           </div>
+           <span class="stretch"></span>
+       </nav>

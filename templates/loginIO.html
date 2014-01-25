@@ -1,0 +1,33 @@
+<div ng-show="user.authorized">Welcome {{ user.first_name }} {{ user.last_name }} !</div>
+
+<div style="margin-left:10px; margin-top:15px; margin-bottom:15px; width:900px;">
+    <b>
+    this is a demo therefore herein providing you with possible Users Names, and their Interest<br />
+    ** All Password is assigned with: "1234567" *for simplicity</b>
+    <br /> <br /> 
+    <span style="color:blue;">Please sign in as one of the following User Emails, User Interest is self explainatory.</span><br /> 
+    hockey.nut+demo@userapp.io<br /> 
+    winelover+demo@userapp.io<br /> 
+    wineryowner+demo@userapp.io<br /> 
+    traveller+demo@userapp.io<br /> 
+    visionizer+demo@userapp.io<br /> 
+    geomaper+demo@userapp.io<br /> 
+    observer+demo@userapp.io<br /><br />
+    <span style="color:red;" >***Note: User Observer has more than one interest</span>
+</div>
+
+<div ng-hide="user.authorized">
+    <p>Please log in</p>
+    <form ua-login ua-error="error-msg">
+	    <input style="width:300px;" name="login" placeholder="User Email"><br>
+	    <input style="width:300px;" name="password" placeholder="Password" type="password"><br>
+	    <p><button type="submit">Log in</button> <!-- or <a href="" ua-oauth-link="google">Log in with Google</a></p> -->
+	    <p id="error-msg"></p>
+    </form>
+    <p><a href="#/signup">Sign up</a></p>
+</div>
+
+<div style="margin-top:15px;">
+    <b>User authenication, permissions, and featuring utilizes the UserApp.io Cloud Component<br />
+    This truly demonstrate the power of Customized Angular Directives</b>
+</div>

@@ -1,0 +1,25 @@
+<!--  <div class="pull-right">
+    <input type="text" ng-model="test.textValue" placeholder="Type something...">
+</div>   -->
+
+<h2>{{item.id}}</h2>
+
+<!-- <p>You typed: <span class="label">{{test.textValue}}</span></p>  -->
+
+
+<ul class="nav nav-tabs">
+    <li ng-class="{active: $routeSegment.contains('tab1')}">
+        <a href="#/myAccount/{{item.id}}/X">Favorites</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('tab2')}">
+        <a href="#/myAccount/{{item.id}}/Y">Restorative</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('tab3')}">
+        <a href="#/myAccount/{{item.id}}/Z">Filings</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('tabSlow')}">
+        <a href="#/myAccount/{{item.id}}/slow">Hygienists</a>
+    </li>
+</ul>
+
+<div app-view-segment="2" class="anim">No tab selected.</div>

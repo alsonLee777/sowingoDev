@@ -1,0 +1,18 @@
+<h2>{{item.id}}</h2>
+
+<ul class="nav nav-tabs">
+    <li ng-class="{active: $routeSegment.contains('xtab1')}">
+        <a href="#/a01/{{item.id}}/X">Favorites</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('xtab2')}">
+        <a href="#/a01/{{item.id}}/Y">Restorative</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('xtab3')}">
+        <a href="#/a01/{{item.id}}/Z">Filings</a>
+    </li>
+    <li ng-class="{active: $routeSegment.contains('xtab4')}">
+        <a href="#/a01/{{item.id}}/slow">Hygienists</a>
+    </li>
+</ul>
+
+<!-- <div app-view-segment="2" class="anim">No tab selected.!!!!</div> -->
